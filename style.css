@@ -1,0 +1,22 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+button {
+  font-weight: bold;
+  background: pink;
+  color: black;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
