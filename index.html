@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>First webpage</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Crystal's First Webpage</h1>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/daasUzDtkSE"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <hr />
+    <div>
+      Shadow DOM example
+    </div>
+    <div id="example">This will use the CSS background</div>
+    <button id="button">Not tomato</button>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+
+    <hr />
+    <div>
+      Templates example
+    </div>
+    <template id="book-template">
+      <li><span class="title"></span> &mdash; <span class="author"></span></li>
+    </template>
+
+    <template id="book-template-2">
+      <li>
+        <span class="author"></span>'s classic novel <span class="title"></span>
+      </li>
+    </template>
+
+    <ul id="books"></ul>
+
+    <fieldset id="templates">
+      <legend>Choose template</legend>
+
+      <label>
+        <input type="radio" name="template" value="book-template" checked />
+        Template One
+      </label>
+      <label>
+        <input type="radio" name="template" value="book-template-2" /> Template
+        Two
+      </label>
+    </fieldset>
+  </body>
+  <footer>
+    <hr />
+    <p>
+      I'm your cool new webpage. Made with
+      <a href="https://glitch.com">Glitch</a>!
+    </p>
+    <copyright-footer></copyright-footer>
+  </footer>
+</html>
